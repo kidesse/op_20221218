@@ -16,3 +16,9 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#Add theme
+cd feeds/luci/themes
+git clone https://github.com/kenzok78/luci-theme-argonne
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git
